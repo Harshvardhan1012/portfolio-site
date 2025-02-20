@@ -43,25 +43,6 @@ const educationPage = () => {
             x={-100}
             delay={0.35}
             className="w-1/4 font-rubik flex items-center justify-evenly text-lg max-sm:text-base ">
-            2017
-          </FramerWrapper>
-          <FramerWrapper
-            y={0}
-            x={100}
-            delay={0.35}
-            className="relative w-3/4 border-l-4 border-l-[#3c3c3c] p-4 gap-3 education_point ">
-            <div className="text-2xl font-rubik max-sm:text-xl">
-              SSC-CBSE, <br /> Hind Zinc School, Chittorgarh, Rajasthan
-            </div>
-            <p className=' font-poppins text-base w-full text-primary  max-sm:text-xs'>Percentage - 77.9%</p>
-          </FramerWrapper>
-        </div>
-        <div className="w-full h-fit flex">
-          <FramerWrapper
-            y={0}
-            x={-100}
-            delay={0.35}
-            className="w-1/4 font-rubik flex items-center justify-evenly text-lg max-sm:text-base ">
             2019
           </FramerWrapper>
           <FramerWrapper
@@ -75,6 +56,25 @@ const educationPage = () => {
             <p>
               Percentage - 82.4%
             </p>
+          </FramerWrapper>
+        </div>
+        <div className="w-full h-fit flex">
+          <FramerWrapper
+            y={0}
+            x={-100}
+            delay={0.35}
+            className="w-1/4 font-rubik flex items-center justify-evenly text-lg max-sm:text-base ">
+            2017
+          </FramerWrapper>
+          <FramerWrapper
+            y={0}
+            x={100}
+            delay={0.35}
+            className="relative w-3/4 border-l-4 border-l-[#3c3c3c] p-4 gap-3 education_point ">
+            <div className="text-2xl font-rubik max-sm:text-xl">
+              SSC-CBSE, <br /> Hind Zinc School, Chittorgarh, Rajasthan
+            </div>
+            <p className=' font-poppins text-base w-full text-primary  max-sm:text-xs'>Percentage - 77.9%</p>
           </FramerWrapper>
         </div>
       </div>

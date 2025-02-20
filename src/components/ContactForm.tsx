@@ -13,6 +13,7 @@ import { Button } from "./ui/button";
 import { SendEmail } from "./SendEmail";
 
 const ContactForm = () => {
+
   return (
     <Card>
       <form
@@ -35,15 +36,6 @@ const ContactForm = () => {
               name="name"
               required
               placeholder="Enter your name"
-            />
-          </div>
-          <div className="grid w-full max-w-sm items-center gap-1.5 mt-2">
-            <Label htmlFor="email">Email</Label>
-            <Input
-              type="email"
-              name="SenderEmail"
-              required
-              placeholder="Enter your email"
             />
           </div>
           <div className="grid w-full max-w-sm items-center gap-1.5 mt-2">

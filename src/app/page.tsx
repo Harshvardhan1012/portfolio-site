@@ -11,7 +11,7 @@ export const siteConfig = {
   name: "Harshvardhan Sharma",
   description: "I am a Passionate Software Developer",
   ogImage: "https://mdTaquiImam.vercel.app/og-image.png",
-  url: "https://mdTaquiImam.vercel.app",
+  url: "",
 }
 export default function Home() {
   return (

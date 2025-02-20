@@ -1,102 +1,102 @@
-import Heading from "@/components/Heading";
-import { Badge } from "@/components/ui/badge";
-import { ExternalLink, PackagePlus } from "lucide-react";
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import Link from "next/link";
-import { cn } from "@/lib/utils";
-import { buttonVariants } from "@/components/ui/button";
-import FramerWrapper from "@/components/animation/FramerWrapper";
+import FramerWrapper from '@/components/animation/FramerWrapper'
+import Heading from '@/components/Heading'
+import { Badge } from '@/components/ui/badge'
+import { Briefcase } from 'lucide-react'
+import Image from 'next/image'
+import th from '../../../public/techHolding.png'
+import creart from './../../../public/creart.png'
+import ril from './../../../public/RIL.png'
 
-const morePage = () => {
-  const morelink = [
-    {
-      title: "Dev.to",
-      description:
-        "I write blogs on web development, trending tech stacks or javascript guide or tips in Dev.to ",
-      link: "https://dev.to/random_ti",
-    },
-    {
-      title: "Hashnode",
-      description:
-        "I write blogs on web development, trending tech stacks or javascript guide or tips in Hashnode",
-      link: "https://mdtaquiimam.hashnode.dev/",
-    },
-    {
-      title: "Medium",
-      description:
-        "I write blogs on web development, trending tech stacks or javascript guide or tips in Medium",
-      link: "https://medium.com/@mdtaqui.jhar",
-    },
-
-    {
-      title: "Daily.Dev",
-      description:
-        "I am also the member of Daily Dev squads and i also upload post on some squads.",
-      link: "https://app.daily.dev/taqui_786",
-    },
-    {
-      title: "Gumroad",
-      description:
-        "I also sell digital products on gumroad like Notion Templates and web projects etc.",
-      link: "https://mdtaquijhar.gumroad.com/",
-    },
-    {
-      title: "Buy Me a coffee",
-      description:
-        "Supports my content quality, new topics, and project creation.",
-      link: "https://www.buymeacoffee.com/taquidevloper",
-    },
-  ];
-
+const experiencePage = () => {
   return (
     // ABOUT PAGE
     <div className="h-full w-full relative flex flex-col items-start gap-5 overflow-hidden">
-      <Badge variant="secondary" className="gap-1.5 py-1 ">
-        <PackagePlus className="h-4 w-4" />
-        More
+      <Badge
+        variant="secondary"
+        className="gap-1.5 py-1 ">
+        <Briefcase className="h-4 w-4" />
+        Experience
       </Badge>
       <div className="flex flex-col gap-3">
-        <Heading>More</Heading>
+        <Heading>My Experience</Heading>
       </div>
-      <div className="h-auto w-full flex flex-wrap gap-3 p-2">
-        {morelink.map((value, indx) => {
-          
-          return (
-            <FramerWrapper key={indx} className="max-w-[32%] max-lg:max-w-full" y={0} scale={0.8} delay={indx/4} duration={0.15}>
-            <Card  className="w-full">
-              <CardHeader>
-                <CardTitle>{value.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-base font-poppins ">{value.description}</p>
-              </CardContent>
-              <CardFooter>
-                <Link
-                  href={value.link}
-                  target="blank"
-                  className={cn(
-                    buttonVariants({ variant: "default", size: "lg" }),
-                    "w-full gap-3"
-                  )}
-                >
-                  {" "}
-                  <ExternalLink />
-                  Visit here
-                </Link>
-              </CardFooter>
-            </Card>
-            </FramerWrapper>
-          );
-        })}
+      <div className="w-full h-fit flex flex-col">
+        <div className="w-full h-fit flex">
+          <FramerWrapper
+            y={0}
+            x={-100}
+            delay={0.35}
+            className="w-1/4 font-rubik flex items-center justify-evenly text-lg max-sm:text-base ">
+            June 2023 - July 2023
+          </FramerWrapper>
+          <FramerWrapper
+            y={0}
+            x={100}
+            delay={0.35}
+            className="relative w-3/4 border-l-4 border-l-[#3c3c3c] p-4 gap-3 education_point flex-row flex items-center">
+            <Image
+              src={creart}
+              height={30}
+              width={70}
+              alt="TH logo"
+            />
+            <div className="text-xl font-rubik max-sm:text-xl">
+              SDE Intern, <br /> CreArt Solutions - Ahmedabad, Gujarat
+            </div>
+          </FramerWrapper>
+        </div>
+        <div className="w-full h-fit flex">
+          <FramerWrapper
+            y={0}
+            x={-100}
+            delay={0.35}
+            className="w-1/4 font-rubik flex items-center justify-evenly text-lg max-sm:text-base ">
+            Jan 2024 - May 2024
+          </FramerWrapper>
+          <FramerWrapper
+            y={0}
+            x={100}
+            delay={0.35}
+            className="relative w-3/4 border-l-4 border-l-[#3c3c3c] p-4 gap-3 education_point flex-row flex items-center ">
+            <Image
+              src={th}
+              height={30}
+              width={70}
+              alt="TH logo"
+            />
+            <div className="text-xl font-rubik max-sm:text-xl">
+              SDE Intern, <br /> Tech Holding - Ahmedabad, Gujarat
+            </div>
+          </FramerWrapper>
+        </div>
+        <div className="w-full h-fit flex">
+          <FramerWrapper
+            y={0}
+            x={-100}
+            delay={0.35}
+            className="w-1/4 font-rubik flex items-center justify-evenly text-xl max-sm:text-base ">
+            August 2024 - Present
+          </FramerWrapper>
+          <FramerWrapper
+            y={0}
+            x={100}
+            delay={0.35}
+            className="relative w-3/4 border-l-4 border-l-[#3c3c3c] p-4 gap-3 education_point flex flex-row items-center">
+            <Image
+              src={ril}
+              height={30}
+              width={70}
+              alt="RIL logo"
+            />
+            <div className="text-xl font-rubik max-sm:text-xl">
+              Graduate Engineer Trainee, <br /> Reliance Industries - Jamnagar
+              ,Gujarat
+            </div>
+          </FramerWrapper>
+        </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default morePage;
+export default experiencePage

@@ -3,15 +3,14 @@ import { cn } from "@/lib/utils";
 
 
 import {
-  Briefcase,
   FolderGit2,
   GraduationCap,
   HomeIcon,
   LightbulbIcon,
   Mail,
   MoreHorizontal,
- 
-  User,
+  BriefcaseIcon,
+  User
 } from 'lucide-react';
 
 import { Dock, DockIcon, DockItem, DockLabel } from '@/components/animation/DockAnimation';
@@ -32,18 +31,32 @@ const Navbar = () => {
       href: '/',
     },
     {
-      title: 'About',
-      icon: (
-        <User className='h-full w-full ' />
-      ),
-      href: '/about',
-    },
-    {
       title: 'Skills',
       icon: (
         <LightbulbIcon className='h-full w-full ' />
       ),
       href: '/skills',
+    },
+    {
+      title: 'Experience',
+      icon: (
+        <BriefcaseIcon className='h-full w-full ' />
+      ),
+      href: '/more',
+    },
+    {
+      title: 'Projects',
+      icon: (
+        <FolderGit2 className='h-full w-full ' />
+      ),
+      href: '/projects',
+    },
+    {
+      title: 'About',
+      icon: (
+        <User className='h-full w-full ' />
+      ),
+      href: '/about',
     },
     {
       title: 'Education',
@@ -53,26 +66,11 @@ const Navbar = () => {
       href: '/education',
     },
     {
-      title: 'Projects',
-      icon: (
-        <FolderGit2 className='h-full w-full ' />
-      ),
-      href: '/projects',
-    },
-   
-    {
       title: 'Contact us',
       icon: (
         <Mail className='h-full w-full ' />
       ),
       href: '/contact',
-    },
-    {
-      title: 'More',
-      icon: (
-        <MoreHorizontal className='h-full w-full ' />
-      ),
-      href: '/more',
     },
   ];
   const [scrolling, setScrolling] = useState(false);
